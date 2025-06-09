@@ -56,9 +56,6 @@ function Header() {
           <li className={isActive('/portfolio') ? 'active' : ''}>
             <Link to="/portfolio" onClick={closeMenu}>Portfolio</Link>
           </li>
-          <li className={isActive('/achievement') ? 'active' : ''}>
-            <Link to="/achievement" onClick={closeMenu}>Achievement</Link>
-          </li>
           <li className={isActive('/contact') ? 'active' : ''}>
             <Link to="/contact" onClick={closeMenu}>Contact</Link>
           </li>
