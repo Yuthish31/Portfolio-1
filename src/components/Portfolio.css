@@ -1,0 +1,230 @@
+/* Base Styles */
+.portfolio-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #2d2e32;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .particles-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e6f0ff 100%);
+  }
+  
+  .portfolio-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-title {
+    text-align: center;
+    color: #147efb;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .tab {
+    padding: 0.8rem 2rem;
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #767676;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+  }
+  
+  .tab.active {
+    background: #147efb;
+    color: white;
+    box-shadow: 0 4px 15px rgba(20, 126, 251, 0.3);
+  }
+  
+  .tab:hover {
+    color: #147efb;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 1rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .section-header h2 {
+    color: #147efb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 3px;
+    background: #147efb;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Experience Section */
+  .experience-item, .project-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .date, .company {
+    color: #767676;
+    font-weight: 500;
+    margin: 0.5rem 0;
+  }
+  
+  .responsibilities {
+    padding-left: 1.5rem;
+  }
+  
+  .responsibilities li {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .responsibilities li::before {
+    content: '•';
+    position: absolute;
+    left: -1rem;
+    color: #147efb;
+    font-weight: bold;
+  }
+  
+  .tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tech-stack span {
+    background: #e6f0ff;
+    color: #147efb;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  /* Education Section */
+  .education-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .degree {
+    font-weight: 600;
+    margin: 0.3rem 0;
+  }
+  
+  .grade {
+    color: #147efb;
+    font-weight: 600;
+  }
+  
+  /* Certificates Section */
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .certificate-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certificate-card h3 {
+    color: #147efb;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Personal Details */
+  .personal-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .details-grid h4 {
+    color: #147efb;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .portfolio-container {
+      padding: 1rem;
+    }
+    
+    .tabs {
+      flex-wrap: wrap;
+    }
+    
+    .tab {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+    
+    .portfolio-content {
+      padding: 1.5rem;
+    }
+    
+    .certificates-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-title {
+      font-size: 2rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+  }
