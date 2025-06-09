@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
-import Achievement from './components/Achievement';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -15,7 +14,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/achievement" element={<Achievement />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
